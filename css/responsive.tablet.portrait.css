@@ -1,0 +1,106 @@
+	.region-two-brick-left-above
+	{
+		width: 45% !important;
+		display: inline;
+	}
+	.region-two-brick-right-above .view-gallery
+	{
+		width: 100% !important;
+		display: inline;
+		float: right !important;
+	}
+  ul.menu li a
+ {
+ 	 display: block;
+ 	 color: white;
+ 	 text-decoration: none;
+ 	 padding: 3px 10px 3px 10px;
+ 	 border-bottom: 1px solid white;
+ }
+ ul.menu li
+ { 
+ 	 background-color: #1E346D;
+ 	 list-style: none;
+ }
+ ul.menu li:hover
+ {
+ 	  background-color: #3F589A
+ }
+ ul.menu,.block-content
+ {
+ 	 margin: 0px !important;
+ 	 padding: 0px !important;
+ }
+ .menu-wrapper
+ {
+ 	 margin: 0px;
+ 	 padding: 0px;
+ }
+ .view-gallery
+ {
+ 	 clear: both;
+ 	 float: none;
+ 	 display: table;
+ 	 margin-right: auto !important;
+ 	 margin-left: auto !important;
+ 	 width: 300px;
+ }
+  html
+ {
+ 	 background: none !important;
+ 	 width: 100%;
+ 	 font-size: 15px;
+ }
+.view-people .views-field
+ {
+ 	 max-width: 20px;
+ }
+ .section-outreach .views-field
+ {
+ 	 max-width: 20px;
+ }
+ 
+ /******** Research Nodes *******/
+
+#research_image_field
+{
+	display: inline-block;
+	float: left;
+	padding: 0px 20px 20px 0px;
+}
+#research_about_field
+{
+	float: right;
+	display: inline-block;
+	margin-top: -10px;
+}
+#research_link_field
+{
+	display: block;
+	float: left;
+}
+#research_people_field
+{
+	display: block;
+	float: left;
+}
+/******** People Nodes *******/
+
+#people_position
+{
+	font-weight: bold;
+	float: left;
+	width: 100%;
+}
+#people_image_div
+{
+	float: left;
+	width: 200px;
+	padding: 0px 15px 15px 0px;
+}
+#people_areas_of_interest
+{
+	padding-top: 10px;
+	clear: both;
+	border-top: 1px solid #EBEBEB;
+}

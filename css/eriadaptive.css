@@ -1,0 +1,221 @@
+/**
+ * Footheme footheme.css
+ *
+ * Use this file to add your custom styles.
+ *
+ * You can change the name of this file, just
+ * remember to update the name in the info file
+ * as well.
+ */
+ 
+ .view-content
+ {
+ 	 font-size: 0.89em;
+ }
+ 
+ ul.primary
+ {
+ 	 white-space: normal !important;
+ }
+ #admin-menu
+ {
+ 	 width: 95%;
+ }
+ #branding,#logo
+ {
+ 	 width: 100%;
+ 	 padding: 0px;
+ }
+ #breadcrumb
+ {
+ 	 display: none;
+ }
+ #messages
+ {
+ 	 margin-top: 100px;
+ }
+ #columns
+ {
+ 	 margin-top: 100px;
+ }
+ .submitted
+ {
+ 	 display: none;
+ }
+ .block-inner
+ {
+ 	 background: none;
+ }
+ .sidebar .block-title
+ {
+ 	 font-size: 1em;
+ }
+ .block-title
+ {
+ 	 background: none;
+ }
+html
+ {
+ 	 background: url('/sites/all/themes/eriadaptive/eri4-gradient.jpeg') top center no-repeat;
+ }
+ .front #page-title
+ {
+ 	 display: none;
+ }
+ #page-title
+ {
+ 	 color: #1E346D;
+ 	 font-size: 30px !important;
+ 	 margin-bottom: 20px !important;
+ 	 border-bottom: 1px solid #DDDDDD;
+ }
+ #footer p
+ {
+ 	 color: #555;
+ 	 font-size: 11px;
+ }
+ #footer a
+ {
+ 	 color: #1E346D;
+ 	 font-size: 11px;
+ }
+ p
+ {
+	 line-height: 1.2em;
+ }
+ .front .field-type-text-with-summary
+ {
+	 font-size: 1.3em;
+	 color: #323232;
+ }
+ /*.region-two-brick-left-above
+ {
+	 width: 60% !important;
+ }
+ .region-two-brick-right-above
+ {
+	 width: 40% !important;
+ }*/
+ h2.pane-title
+ {
+ 	 border-bottom: 1px solid #CCCCCC;
+ }
+ 
+.view-research-view-with-pics-body .views-field-title
+ {
+ 	 clear:both;
+ 	 text-align: center;
+ 	 font-size: 30px;
+ 	 margin-bottom: 30px;
+ 	 margin-top: 10px;
+ 	 width: 100%;
+ }
+.view-research-view-with-pics-body .views-row-even,.views-row-odd
+ {
+ 	 display: inline-block;
+ 	 
+ }
+ .view-research-view-with-pics-body .views-row-odd
+ {
+ 	 width: 95%;
+ 	 background-color: white;
+ 	 margin-bottom: 0px;
+ 	 padding: 10px;
+ }
+ .view-research-view-with-pics-body .views-row-even
+ {
+ 	 width: 95%;
+ 	 background-color: whiteSmoke;
+ 	 margin-bottom: 0px;
+ 	 padding: 10px;
+ }
+.view-research-view-with-pics-body .views-row-even .views-field-field-image
+ {
+ 	 float: left;
+ 	 width: 40%;
+ }
+.view-research-view-with-pics-body .views-row-odd .views-field-field-image
+ {
+ 	 float: right;
+ 	 width: 40%;
+ }
+.view-research-view-with-pics-body .views-row-even .views-field-body
+ {
+ 	 float: right;
+ 	 width: 60%;
+ }
+ .view-research-view-with-pics-body .views-row-odd .views-field-field-image img
+ {
+ 	 float: right;
+ }
+.view-research-view-with-pics-body .views-row-odd .views-field-body
+ {
+ 	 float: left;
+ 	 width: 60%;
+ }
+ .view-research-view-with-pics-body ul
+ {
+ 	 list-style-type: none !important;
+ }
+  #menu-bar
+ {
+ 	 background: none;
+ 	 width: 300px;
+ 	 float: right;
+ }
+.node-content p,h4,h3,h2,h1,div
+{
+	color: #323232;
+}
+
+.flexslider-views-slideshow-main-frame-row
+{
+	text-align: center;
+}
+
+div.flexslider.flexslider-processed
+{
+	margin: 0px 0px 20px 0px !important;
+}
+.region-two-brick-right-above
+{
+	margin-bottom: 40px;
+}
+
+#comments
+{
+	display: none;
+}
+.field-name-field-outreach-type
+{
+	display: none;
+}
+thead tr th
+{
+	background-color: #1E346D !important;
+	color: white !important;
+}
+.quicktabs-wrapper .item-list
+{
+	margin-bottom: -10px;
+}
+.section-research ul.quicktabs-tabs.quicktabs-style-excel
+{
+	padding: 0px 25px;
+}
+#quicktabs-people_quick_tab
+{
+	background-color: white;
+}
+#quicktabs-people_quick_tab .quicktabs-tabpage
+{
+	background-color: lightgray;
+}
+.views-field-title
+{
+	width: 150px;
+}
+.view .active
+{
+	color: white !important;
+}

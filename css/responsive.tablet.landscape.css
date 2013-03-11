@@ -1,0 +1,55 @@
+	.region-two-brick-left-above
+	{
+		width: 45% !important;
+		display: inline;
+	}
+	.region-two-brick-right-above
+	{
+		float: right !important;
+	}
+
+/******** Research Nodes *******/
+
+#research_image_field
+{
+	display: inline-block;
+	float: left;
+	padding: 0px 20px 20px 0px;
+}
+#research_about_field
+{
+	float: right;
+	display: inline-block;
+	margin-top: -10px;
+}
+#research_link_field
+{
+	display: block;
+	float: left;
+}
+#research_people_field
+{
+	display: block;
+	float: left;
+}
+
+/******** People Nodes *******/
+
+#people_position
+{
+	font-weight: bold;
+	float: left;
+	width: 100%;
+}
+#people_image_div
+{
+	float: left;
+	width: 200px;
+	padding: 0px 15px 15px 0px;
+}
+#people_areas_of_interest
+{
+	padding-top: 10px;
+	clear: both;
+	border-top: 1px solid #EBEBEB;
+}

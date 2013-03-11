@@ -1,0 +1,229 @@
+/************
+*The following two set the width of the columns for Date and PI on Events table
+************/
+
+.views-field-field-date-time
+{
+	width: 100px;
+}
+
+.views-field-field-pi
+{
+	width: 120px;
+}
+
+/************
+*Sets the width and forces gallery slideshow on front page to the right
+************/
+
+.view-gallery
+{
+	width: 325px;
+	float: right;
+}
+
+
+/*************
+* Centers gallery images within the gallery wrapper
+*************/
+
+.view-gallery img
+{
+	display: block;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+/************
+*Makes caption text below slideshow smaller
+************/
+
+.views-slideshow-cycle-main-frame-row-item p
+{
+	font-size: 11px;
+	text-align: center;
+	/*color: #52944c;       green that matches ERI logo text */
+	color: #525C65;
+	padding: 10px;
+}
+
+/************
+*Spaces out the image and its views-field-field-imaoe
+************/
+.front .views-field-field-image{
+
+	padding: 15px;
+}
+
+
+/***********
+*Fix overlaps in Calendar module
+***********/
+
+.context-calendar .pager
+{
+	border: 0;
+	margin-bottom: 20px;
+}
+.context-calendar #page-title
+{                                          
+	display: none;
+}
+
+/***********
+*Styles profile page
+***********/
+
+.page-people-profile #page-title
+{
+	display: none;
+}
+
+.page-people-profile .profile-title
+{
+	color: #1E346D;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 180%;
+}
+.page-people-profile .profile-title-wrapper
+{
+	width: 90%;
+	border-bottom: 1px solid #E3E3E3;
+}
+.events-rss-feed-link
+{
+	float: right;
+	margin-top:-50px;
+	margin-right: 5px;
+}
+.page-events-about,.page-events-seminars-about .event-title
+{
+	color: #1E346D;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 180%;
+}
+
+.page-events-about,.page-events-seminars-about .event-title-wrapper
+{
+	width: 90%;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.event-info-wrapper
+{
+	margin-left: -20px;
+	margin-top: 20px;
+	float: left;
+	width: 225px;
+	clear: left;
+}
+
+.event-url-wrapper,.event-body-wrapper
+{
+	clear: left;
+	margin-left: -20px;
+	margin-top: 20px;
+	float: left;
+}
+.profile-top
+{
+	float: left;
+	width: 720px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: -20px;
+}
+.profile-left
+{
+	float: left;
+	margin-bottom: 10px;
+	margin-left: -10px;
+	display: block;
+	clear: left;	
+}
+.profile-left-width
+{
+	max-width: 250px;
+}
+.wrap
+{
+	white-space: normal;
+}
+.profile-right
+{
+	float: left;
+	margin-left: -10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+.profile-right-width
+{
+	width: 450px;
+}
+.profile-right span,.profile-left span,.profile-align-bottom span
+{
+	font-weight: bold;
+}
+.page-people-profile .views-label
+{
+	font-weight: bold;
+}
+.profile-align-bottom
+{
+	width: 720px;
+	border-top: 1px solid #E3E3E3;
+	margin-left: -20px;
+}
+
+/***********
+* Styles the research group profile page
+***********/
+
+.research-top
+{
+	width: 700px;
+	float: left;
+}
+.research-right
+{
+	width: 450px;
+	float: right;
+	margin-bottom: 120px;
+}
+.research-left
+{
+	width: 250px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+/***********
+*Styles the photo gallery to the right of the mission statement on the front page
+***********/
+
+#gallery-pane
+{
+	width: 320px;
+	float: right;
+}
+
+/************
+ * Styles the research group list to make rows have alternating sttyling
+ * *********/
+
+/*.odd.research-row .views-field-title
+{
+	float: right !important;
+}
+.odd.research_row .views-field-field-image
+{
+	float: left !important;
+}
+.even.research_row .views-field-title
+{
+	float: left !important;
+}
+.even.research_row .views-field-field-image
+{
+	float: right !important;
+}*/

@@ -1,0 +1,79 @@
+/* #logo
+ {
+ 	 width: 960px;
+ 	 padding: 0px;
+ }*/
+ 
+ .content-inner
+ {
+ 	 margin-left: 20% !important;
+ }
+ .sidebar
+ {
+ 	 width: 20% !important;
+ }
+ #menu-bar
+ {
+ 	 margin-top: 50px;
+ 	 width: 220px;
+ }
+ .views-field-field-date-time
+ {
+ 	 width: 220px;
+ }
+ 
+ /******** Research Nodes *******/
+
+#research_image_field
+{
+	display: inline-block;
+	float: left;
+	padding: 0px 20px 20px 0px;
+}
+#research_about_field
+{
+	float: right;
+	margin-top: -10px;
+	display: inline-block;
+}
+#research_link_field
+{
+	display: block;
+	float: left;
+	padding: 10px;
+	position: relative;
+}
+#research_people_field
+{
+	display: block;
+	float: left;
+	padding: 10px;
+	position: relative;
+}
+
+/******** People Nodes *******/
+
+#people_position
+{
+	font-weight: bold;
+	float: left;
+	width: 100%;
+}
+#people_image_div
+{
+	float: left;
+	width: 200px;
+	padding: 0px 15px 15px 0px;
+}
+#people_areas_of_interest
+{
+	padding-top: 10px;
+	clear: both;
+	border-top: 1px solid #EBEBEB;
+}
+#people_info
+{
+	display: block;
+	float: left;
+	position: relative;
+}
