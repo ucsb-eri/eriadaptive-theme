@@ -1,0 +1,107 @@
+/**
+=======================================================
+                 ERIAdaptive v2.0
+      =======================================
+
+CONTENTS:
+------------------
+..1) Vars
+..2) Mixins
+..3) Core elements
+..4) Header
+..5) Content
+..6) Modules
+..7) Footer
+*/
+
+/** 1) --Vars-- */
+
+	$padding : 15px;
+	$navy    : #1E346D;
+	$darkgray: #222;
+	$green   : #49913d;
+
+/** 2) --Mixins-- */
+
+	@mixin image-in-text {
+		float: left;
+		padding: 5px $padding 0 0;
+	}
+	@mixin opaque {
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-khtml-opacity: 0.7;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	}
+
+/** 3) --Core Elements-- */
+
+	body {
+		background:url('../images/body-bg.jpg') top center no-repeat;
+		color: $darkgray;
+	}
+	a {
+		color: $navy;
+	}
+	h1 {
+		color: $navy
+	}
+
+/** 4) --Header--  */
+
+	//Universal Header
+	header {
+		#branding {
+			margin: 0;
+		}
+		#logo {
+			padding: 0;
+		}
+		.region-header {
+			position: relative;
+			margin-top: -52px;
+			#block-search-form {
+				float: right;
+			}
+		}
+	}
+
+/** 5) --Content--  */
+
+	// Universal Content
+	#page-content {
+		padding: $padding;
+		background:url('../images/background.jpg') no-repeat;
+		margin: 10px 0;
+		// Hides the "submitted by section on each node"
+		article footer.submitted {
+			display: none;
+		}
+		#comments {
+			display: none;
+		}
+		.sidebar {
+			h2 {
+				font-size: 1em;
+			}
+		}
+	}
+
+	// Research Group Nodes
+	body.node-type-research-group {
+		.field-name-field-image {
+			@include image-in-text;
+		}
+	}
+
+	.pane-groups {
+		.views-field-body .field-content {
+			@include opaque;
+			background: #fff;
+			position: absolute;
+			padding: $padding;
+		}
+		.views-row {
+			border-left: 5px solid $green;
+		}
+	}

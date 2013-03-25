@@ -1,0 +1,93 @@
+/**
+=======================================================
+                 ERIAdaptive v2.0
+      =======================================
+
+CONTENTS:
+------------------
+..1) Vars
+..2) Mixins
+..3) Core elements
+..4) Header
+..5) Content
+..6) Modules
+..7) Footer
+*/
+/** 1) --Vars-- */
+/** 2) --Mixins-- */
+/** 3) --Core Elements-- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000339}}
+body {
+  background: url("../images/body-bg.jpg") top center no-repeat;
+  color: #222222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000343}}
+a {
+  color: #1e346d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000346}}
+h1 {
+  color: #1e346d;
+}
+
+/** 4) --Header--  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000354}}
+header #branding {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000357}}
+header #logo {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000360}}
+header .region-header {
+  position: relative;
+  margin-top: -52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000363}}
+header .region-header #block-search-form {
+  float: right;
+}
+
+/** 5) --Content--  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000372}}
+#page-content {
+  padding: 15px;
+  background: url("../images/background.jpg") no-repeat;
+  margin: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000377}}
+#page-content article footer.submitted {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000380}}
+#page-content #comments {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000384}}
+#page-content .sidebar h2 {
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000392}}
+body.node-type-research-group .field-name-field-image {
+  float: left;
+  padding: 5px 15px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\0000398}}
+.pane-groups .views-field-body .field-content {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  background: #fff;
+  position: absolute;
+  padding: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive_2\/sass\/eriadaptive_2\.scss}line{font-family:\00003104}}
+.pane-groups .views-row {
+  border-left: 5px solid #49913d;
+}
