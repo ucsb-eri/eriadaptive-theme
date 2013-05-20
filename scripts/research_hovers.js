@@ -1,35 +1,108 @@
 (function ($) {
-	$(document).ready(function() {
-		$("#quicktabs-tab-people_by_research_area-1, #quicktabs-tab-r_qt-2").mouseover(function(){
-			$("#quicktabs-tab-people_by_research_area-1, #quicktabs-tab-r_qt-2").html("Earth Evolution");
-		});
-		$("#quicktabs-tab-people_by_research_area-2, #quicktabs-tab-r_qt-3").mouseover(function(){
-			$("#quicktabs-tab-people_by_research_area-2, #quicktabs-tab-r_qt-3").html("Earth System Science");
-		});
-		$("#quicktabs-tab-people_by_research_area-3, #quicktabs-tab-r_qt-4").mouseover(function(){
-			$("#quicktabs-tab-people_by_research_area-3, #quicktabs-tab-r_qt-4").html("Environmental Information Management");
-		});
-		$("#quicktabs-tab-people_by_research_area-4, #quicktabs-tab-r_qt-5").mouseover(function(){
-			$("#quicktabs-tab-people_by_research_area-4, #quicktabs-tab-r_qt-5").html("Human Impacts");
-		});
-		$("#quicktabs-tab-people_by_research_area-5, #quicktabs-tab-r_qt-6").mouseover(function(){
-			$("#quicktabs-tab-people_by_research_area-5, #quicktabs-tab-r_qt-6").html("Natural Hazards");
-		});
-		
-		$("#quicktabs-tab-people_by_research_area-1, #quicktabs-tab-r_qt-2").mouseout(function(){
-			$("#quicktabs-tab-people_by_research_area-1, #quicktabs-tab-r_qt-2").html("EE");
-		});
-		$("#quicktabs-tab-people_by_research_area-2, #quicktabs-tab-r_qt-3").mouseout(function(){
-			$("#quicktabs-tab-people_by_research_area-2, #quicktabs-tab-r_qt-3").html("ESS");
-		});
-		$("#quicktabs-tab-people_by_research_area-3, #quicktabs-tab-r_qt-4").mouseout(function(){
-			$("#quicktabs-tab-people_by_research_area-3, #quicktabs-tab-r_qt-4").html("CS");
-		});
-		$("#quicktabs-tab-people_by_research_area-4, #quicktabs-tab-r_qt-5").mouseout(function(){
-			$("#quicktabs-tab-people_by_research_area-4, #quicktabs-tab-r_qt-5").html("HI");
-		});
-		$("#quicktabs-tab-people_by_research_area-5, #quicktabs-tab-r_qt-6").mouseout(function(){
-			$("#quicktabs-tab-people_by_research_area-5, #quicktabs-tab-r_qt-6").html("NH");
-		});
-	});
+
+	$.fn.betterTip = function() {
+		var that = this;
+
+		function getTip() {
+			var tip = $('<div />', {'class': 'tooltip'});
+
+			tip.html($(this).attr('title'));
+
+			tip.css({
+				'position': 'absolute',
+				'marginTop': '-30px'
+			});
+
+			return tip;
+		}
+
+		function showTip() {
+			$(this).before(getTip.apply(this));
+		}
+
+		function hideTip() {
+			$('.tooltip').remove();
+		}
+
+		this.bind('mouseover', showTip);
+
+		this.bind('mouseout', hideTip);
+	}
+
+	var app = function() {
+		app.Controller.setup();
+	}
+	var Model = function(map) {
+		this.values = map;
+		this.attributes = [];
+		this.set = function(attr, val) {
+			this.attributes[attr] = val;
+			$(this).trigger('change');
+			$(this).trigger('change:' + attr);
+		};
+		this.get = function(attr) {
+			return this.attributes[attr];
+		};
+		this.listen = function() {
+			$(this).bind('change:el', function() {
+				var that = this;
+				var el = this.get('el');
+				el.attr({
+					'title': that.values.full,
+					'alt'  : that.values.full
+				});
+				el.betterTip();
+			});
+		};
+		this.listen();
+	}
+
+	app.Collection = {
+		map: [
+			{
+				'short': 'EE',
+				'full': 'Earth Evolution'
+			},
+			{
+				'short': 'ESS',
+				'full': 'Earth System Science'
+			},
+			{
+				'short': 'HI',
+				'full': 'Human Impacts'
+			},
+			{
+				'short': 'CS',
+				'full': 'Environmental Information Management'
+			},
+			{
+				'short': 'NH',
+				'full': 'Natural Hazards'
+			}
+		],
+		models: [],
+		add: function(m) {
+			this.models.push(m);
+			$(this).trigger('change');
+		}
+	}
+
+	app.Controller = {
+		setup: function() {
+			$('.quicktabs-wrapper .item-list li a').each(this.addTooltip);
+		},
+		addTooltip: function() {
+			var shortName, i;
+			shortName = $(this).text();
+			for(i = 0; i < app.Collection.map.length; i++) {
+				if(shortName == app.Collection.map[i].short) {
+					var m = new Model(app.Collection.map[i]);
+					m.set('el', $(this));
+					app.Collection.add(m);
+				}
+			}
+		}
+	};
+
+	$(app);
 })(jQuery);

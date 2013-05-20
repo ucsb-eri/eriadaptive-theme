@@ -19,14 +19,12 @@
       hide($content['comments']);
       hide($content['links']);
       ?>
-     <image src="/sites/default/files/research/<?php print render($node->field_image['und'][0]['filename']); ?>" id='research_image_field' />
-     <div id='research_about_field'><?php print render($content['body']); ?></div>
-     <div id='research_link_field'><strong>Link:</strong>  <a href="<?php print render($content['field_link'][0]['#markup']); ?>"><?php print render($content['field_link'][0]['#markup']); ?></a></div>
-     <div id='research_people_field'><strong>People:</strong> <?php print render($node->field_people['und'][0]['safe_value']); ?></div>
+	<p><strong>PI:</strong> <?php print render($content['field_pi'][0]['#markup']); ?></p>
+	<p><strong>Date/Time:</strong>  <?php print render($content['field_date_time'][0]['#markup']); ?></p>
+	<p><strong>Event Type:</strong>  <?php print render($content['field_event_type'][0]['#title']); ?></p>
+	<?php print render($content['body'][0]['#markup']); ?>
+	<?php if(isset($content['field_event_url'][0]['#markup'])) { ?><p><strong>To find out more, visit:</strong> <a href="<?php print render($content['field_event_url'][0]['#markup']); ?>"><?php print render($content['field_event_url'][0]['#markup']); ?></a></p><?php } ?>
   </div>
-  <?php if($node->group_group): ?>
-    <div class='subscribe clearfix'><?php if(isset($user->status)) print render($content['group_group']); ?></div>
-  <?php endif; ?>
   
   <div class="clearfix">
     <?php if (!empty($content['links'])): ?>

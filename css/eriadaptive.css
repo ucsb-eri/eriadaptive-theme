@@ -17,10 +17,6 @@
  {
  	 white-space: normal !important;
  }
- #admin-menu
- {
- 	 width: 95%;
- }
  #branding,#logo
  {
  	 width: 100%;
@@ -211,11 +207,28 @@ thead tr th
 {
 	background-color: lightgray;
 }
+#quicktabs-people_quick_tab .quicktabs-style-zen li {
+	margin: 0;
+}
 .views-field-title
 {
 	width: 150px;
 }
+.front .views-field-title {
+	width: 80%;
+}
 .view .active
 {
 	color: white !important;
+}
+.subscribe {
+	clear: both;
+	float: left;
+}
+.tooltip {
+	background: #1E346D;
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 3px;
+	color: white;
 }
