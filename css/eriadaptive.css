@@ -1,0 +1,89 @@
+/**
+=======================================================
+                 ERIAdaptive v2.0
+      =======================================
+
+CONTENTS:
+------------------
+..1) Vars
+..2) Mixins
+..3) Core elements
+..4) Header
+..5) Sidebar
+..6) Content
+..7) Modules
+..8) Footer
+*/
+/** 1) --Vars-- */
+/** 2) --Mixins-- */
+/** 3) --Core Elements-- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000340}}
+body {
+  background: url("../images/body-bg.jpg") top center no-repeat;
+  color: #222222;
+  font-family: Verdana, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000346}}
+a {
+  color: #1e346d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000349}}
+thead tr {
+  background: #333;
+  border-bottom: 2px solid #111;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000354}}
+fieldset {
+  background: #eee;
+  padding: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000357}}
+fieldset .fieldset-legend {
+  padding: 5px;
+}
+
+/** 4) --Header--  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000366}}
+header #branding {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000369}}
+header #logo {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000372}}
+header .region-header {
+  position: relative;
+  margin: -52px 0 0 0;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000376}}
+header .region-header #block-search-form {
+  float: right;
+}
+
+/** 5) --Sidebar--  */
+/** 6) --Content--  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000385}}
+#page-content {
+  padding: 15px;
+  background: url("../images/background.jpg") no-repeat;
+  background-size: 100% auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000390}}
+#page-content article footer.submitted {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000393}}
+#page-content #comments {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/vhosts\/people\.eri\.ucsb\.edu\/sites\/all\/themes\/eriadaptive\/sass\/eriadaptive\.scss}line{font-family:\0000397}}
+#page-content .sidebar h2 {
+  font-size: 1em;
+}

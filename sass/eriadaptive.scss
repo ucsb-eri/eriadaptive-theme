@@ -1,0 +1,101 @@
+/**
+=======================================================
+                 ERIAdaptive v2.0
+      =======================================
+
+CONTENTS:
+------------------
+..1) Vars
+..2) Mixins
+..3) Core elements
+..4) Header
+..5) Sidebar
+..6) Content
+..7) Modules
+..8) Footer
+*/
+
+/** 1) --Vars-- */
+
+	$padding : 15px;
+	$navy    : #1E346D;
+	$darkgray: #222;
+	$green   : #49913d;
+
+/** 2) --Mixins-- */
+
+	@mixin image-in-text {
+		float: left;
+		padding: 5px $padding 0 0;
+	}
+	@mixin opaque {
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-khtml-opacity: 0.7;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	}
+
+/** 3) --Core Elements-- */
+
+	body {
+		background:url('../images/body-bg.jpg') top center no-repeat;
+		color: $darkgray;
+		font-family: Verdana, Helvetica, sans-serif;
+		line-height: 1.5em;
+	}
+	a {
+		color: $navy;
+	}
+	thead tr {
+		background: #333;
+		border-bottom: 2px solid #111;
+		color: white;
+	}
+	fieldset {
+		background: #eee;
+		padding: 5px;
+		.fieldset-legend {
+			padding: 5px;
+		}
+	}
+
+/** 4) --Header--  */
+
+	//Universal Header
+	header {
+		#branding {
+			margin: 0;
+		}
+		#logo {
+			padding: 0;
+		}
+		.region-header {
+			position: relative;
+			margin: -52px 0 0 0;
+			float: right;
+			#block-search-form {
+				float: right;
+			}
+		}
+	}
+/** 5) --Sidebar--  */
+
+/** 6) --Content--  */
+	// Universal Content
+	#page-content {
+		padding: $padding;
+		background:url('../images/background.jpg') no-repeat;
+		background-size: 100% auto;
+		// Hides the "submitted by section on each node"
+		article footer.submitted {
+			display: none;
+		}
+		#comments {
+			display: none;
+		}
+		.sidebar {
+			h2 {
+				font-size: 1em;
+			}
+		}
+	}
